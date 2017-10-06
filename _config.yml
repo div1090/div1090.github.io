@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+name: AlephNull, the cardinality of things I do not know 
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title

@@ -1,0 +1,63 @@
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.bigger {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.1em;
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+}
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 10px;
+}
+ul#horizontal-list li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+div, span
+{
+    color: #1a1a1a;
+}
+
+#menu-outer {
+	height: 84px;
+	background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+.footer {
+    background:  #1a1a1a;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow:hidden;
+}
+
+.column {
+    float: center;
+    padding: 20px;
+}
+
+.left{
+  width: 15%;
+}
+.right{
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}

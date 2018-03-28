@@ -51,10 +51,10 @@ div, span
 }
 
 .left{
-  width: 25%;
+  width: 20%;
 }
 .right{
-  width: 25%;
+  width: 20%;
   overflow:auto;
 }
 

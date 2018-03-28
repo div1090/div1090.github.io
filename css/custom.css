@@ -61,3 +61,71 @@ div, span
 .middle {
   width: 50%;
 }
+/* unvisited link */
+a.text:link {
+    color: #01b2a9;
+}
+
+/* visited link */
+a.text:visited {
+    color: #01b2a9;
+}
+
+/* mouse over link */
+a.text:hover {
+    color: #309196;
+}
+
+/* selected link */
+a.text:active {
+    color: #01b2a9;
+}
+
+
+/* unvisited link */
+a.header:link {
+    color: #309196;
+}
+
+/* visited link */
+a.header:visited {
+    color: #309196;
+}
+
+/* mouse over link */
+a.header:hover {
+    color: #01b2a9;
+}
+
+/* selected link */
+a.header:active {
+    color: #309196;
+}
+
+/* unvisited link */
+a:link {
+    color: #309196;
+}
+
+/* visited link */
+a:visited {
+    color: #309196;
+}
+
+/* mouse over link */
+a:hover {
+    color: #01b2a9;
+}
+
+/* selected link */
+a:active {
+    color: #309196;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #3bb5ba;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #02ede1;
+}

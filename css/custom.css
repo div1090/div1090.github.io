@@ -38,12 +38,11 @@ div, span
 }
 .footer {
     background:  #1a1a1a;
-    position: absolute;
     left: 0;
     bottom: 0;
     height: 50px;
     width: 100%;
-    overflow:hidden;
+    position: sticky;
 }
 
 .column {
@@ -52,14 +51,16 @@ div, span
 }
 
 .left{
-  width: 15%;
+  width: 25%;
 }
 .right{
   width: 25%;
+  overflow:auto;
 }
 
 .middle {
   width: 50%;
+  overflow:auto;
 }
 /* unvisited link */
 a.text:link {

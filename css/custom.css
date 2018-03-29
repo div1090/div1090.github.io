@@ -50,17 +50,11 @@ div, span
     padding: 20px;
 }
 
-.left{
-  width: 20%;
+.col-6 {
+    width: 100%;
 }
-.right{
-  width: 20%;
-  overflow:auto;
-}
-
-.middle {
-  width: 50%;
-  overflow:auto;
+.col-3 {
+    min-width: 0;
 }
 /* unvisited link */
 a.text:link {

@@ -1,4 +1,5 @@
-theme: "mmistakes/minimal-mistakes"
+# remote_theme: "mmistakes/minimal-mistakes"
+theme: "jekyll-theme-slate"
 name: AlephNull, the cardinality of things I do not know
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title

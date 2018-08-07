@@ -5,11 +5,14 @@ layout: default
 
 <!-- Main -->
 <div id="main">
-	<!-- Post -->
 	<article class="shade-two">
 	  <div class="container">
 			<header>
-				<h2>{{- page.title -}}</h2>
+				{% if page.link %}
+					<a href="{{ page.link }}" class="button" style="float: right;">{{ page.link_text }}</a>
+				{% endif %}
+				<h2>{{- page.title -}}
+				</h2>
 				<p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
 			</header>
 	    {{- content -}}

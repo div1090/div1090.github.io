@@ -1,8 +1,224 @@
-<!DOCTYPE HTML>
-<html>
-	{%- include head.html -%}
-	<body>
-		{{- content -}}
-		{%- include footer.html -%}
-	</body>
+<!doctype html>
+<html lang="en">
+  <head>
+
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>{{ page.title }}</title>
+
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+      <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+      <!-- Custom styles for this template -->
+      <link rel= "stylesheet" type= "text/css" href= "../css/custom.css">
+      <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+      <!-- adding google analytics if the environment is set to production -->
+      {% if site.google_analytics and jekyll.environment == 'production' %}
+        {% include analytics.html %}
+      {% endif %}
+    </head>
+
+  <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                    <a class="navbar-brand" href="#"><i class="em em-face_with_monocle"></i> </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item {% if request.path == '/' %}active{% endif %}">
+                        <!-- <a class="nav-link" href="/">Home</a></li> -->
+                        <!-- <li class="nav-item {% if request.path == '/blog' %}active{% endif %}"> -->
+                          <!-- <a class="nav-link" href="/blog">Blog</a></li> -->
+                        <li class="nav-item {% if request.path == '/projects' %}active{% endif %}">
+                          <a class="nav-link" href="/">Projects</a></li>
+                       <li class="nav-item {% if request.path == '/about' %}active{% endif %}">
+                          <a class="nav-link" href="/about">About</a></li>
+                    </div>
+              </nav>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <!---------------------------------------------------------------------------------------------------  -->
+        <!-- <div class="nav-side-menu">
+          &nbsp;
+        </div> -->
+        <!---------------------------------------------------------------------------------------------------  -->
+
+        <div class="container-fluid">
+          <div class="row justify-content-around">
+
+            <!---------------------------------------------------------------------------------------------------  -->
+            <div class="col-lg-6 col-md-8 col-xs-8" font color = #1a1a1a>
+              {{ page.content }}
+            </div>
+            <!---------------------------------------------------------------------------------------------------  -->
+
+              <!---------------------------------------------------------------------------------------------------  -->
+              <!-- <div class="d-none d-lg-block mx-auto">
+                    <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
+                    <!-- <style type="text/css" media="screen">
+                .gr_custom_container_1522250302 {
+                  /* customize your Goodreads widget container here*/
+                  border: 1px solid gray;
+                  border-radius:10px;
+                  padding: 10px 5px 10px 5px;
+                  background-color: transparent;
+                  color: #000000;
+                  width: 300px
+                }
+                .gr_custom_header_1522250302 {
+                  /* customize your Goodreads header here*/
+                  border-bottom: 1px solid gray;
+                  width: 100%;
+                  margin-bottom: 5px;
+                  text-align: center;
+                  font-size: 120%
+                }
+                .gr_custom_each_container_1522250302 {
+                  /* customize each individual book container here */
+                  width: 100%;
+                  clear: both;
+                  margin-bottom: 10px;
+                  overflow: auto;
+                  padding-bottom: 4px;
+                  border-bottom: 1px solid #aaa;
+                }
+                .gr_custom_book_container_1522250302 {
+                  /* customize your book covers here */
+                  overflow: hidden;
+                  height: 60px;
+                    float: left;
+                    margin-right: 4px;
+                    width: 39px;
+                }
+                .gr_custom_author_1522250302 {
+                  /* customize your author names here */
+                  font-size: 10px;
+                }
+                .gr_custom_tags_1522250302 {
+                  /* customize your tags here */
+                  font-size: 10px;
+                  color: gray;
+                }
+                .gr_custom_rating_1522250302 {
+                  /* customize your rating stars here */
+                  float: right;
+                }
+              </style>
+
+                    <div id="gr_custom_widget_1522250302">
+                        <div class="gr_custom_container_1522250302">
+                  <h2 class="gr_custom_header_1522250302">
+                  <a style="text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/19726688-divya-sivasankaran?shelf=read&amp;utm_medium=api&amp;utm_source=custom_widget">I recently read..</a>
+                  </h2>
+                    <div class="gr_custom_each_container_1522250302">
+                        <div class="gr_custom_book_container_1522250302">
+                          <a title="David and Goliath: Underdogs, Misfits, and the Art of Battling Giants" rel="nofollow" href="https://www.goodreads.com/review/show/1873555377?utm_medium=api&amp;utm_source=custom_widget"><img alt="David and Goliath: Underdogs, Misfits, and the Art of Battling Giants" border="0" src="https://images.gr-assets.com/books/1391813567s/15751404.jpg" /></a>
+                        </div>
+                        <div class="gr_custom_rating_1522250302">
+                          <span class=" staticStars" title="liked it"><img alt="liked it" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_inactive.png" /></span>
+                        </div>
+                        <div class="gr_custom_title_1522250302">
+                          <a rel="nofollow" href="https://www.goodreads.com/review/show/1873555377?utm_medium=api&amp;utm_source=custom_widget">David and Goliath: Underdogs, Misfits, and the Art of Battling Giants</a>
+                        </div>
+                        <div class="gr_custom_author_1522250302">
+                          by <a rel="nofollow" href="https://www.goodreads.com/author/show/1439.Malcolm_Gladwell">Malcolm Gladwell</a>
+                        </div>
+                        <div class="gr_custom_review_1522250302">
+                          Malcolm Gladwell is an amazing story-teller. Every one of his books has been a gripping and interesting read. However, the reasoning and arguments put forth in the chapters fall short of being well-grounded.
+
+              Each chapter in the book ma...
+                        </div>
+                    </div>
+                    <div class="gr_custom_each_container_1522250302">
+                        <div class="gr_custom_book_container_1522250302">
+                          <a title="Ethical Know-How: Action, Wisdom, and Cognition" rel="nofollow" href="https://www.goodreads.com/review/show/2216526343?utm_medium=api&amp;utm_source=custom_widget"><img alt="Ethical Know-How: Action, Wisdom, and Cognition" border="0" src="https://images.gr-assets.com/books/1347321006s/695484.jpg" /></a>
+                        </div>
+                        <div class="gr_custom_rating_1522250302">
+                          <span class=" staticStars" title="it was amazing"><img alt="it was amazing" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /></span>
+                        </div>
+                        <div class="gr_custom_title_1522250302">
+                          <a rel="nofollow" href="https://www.goodreads.com/review/show/2216526343?utm_medium=api&amp;utm_source=custom_widget">Ethical Know-How: Action, Wisdom, and Cognition</a>
+                        </div>
+                        <div class="gr_custom_author_1522250302">
+                          by <a rel="nofollow" href="https://www.goodreads.com/author/show/60727.Francisco_J_Varela">Francisco J. Varela</a>
+                        </div>
+                        <div class="gr_custom_review_1522250302">
+                          I'm so glad to have discovered Varela!
+              Don't let the size of the book deceive you. Varela touches upon, and conveys so much in this tiny book that one reading is simply not enough to take it all in. This book has fundamentally changed t...
+                        </div>
+                        <div class="gr_custom_tags_1522250302">
+                          tagged:
+                          goodreads
+                        </div>
+                    </div>
+                    <div class="gr_custom_each_container_1522250302">
+                        <div class="gr_custom_book_container_1522250302">
+                          <a title="Phantoms in the Brain: Probing the Mysteries of the Human Mind" rel="nofollow" href="https://www.goodreads.com/review/show/1407079962?utm_medium=api&amp;utm_source=custom_widget"><img alt="Phantoms in the Brain: Probing the Mysteries of the Human Mind" border="0" src="https://images.gr-assets.com/books/1409601908s/31555.jpg" /></a>
+                        </div>
+                        <div class="gr_custom_rating_1522250302">
+                          <span class=" staticStars" title="it was amazing"><img alt="it was amazing" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://www.goodreads.com/images/layout/gr_red_star_active.png" /></span>
+                        </div>
+                        <div class="gr_custom_title_1522250302">
+                          <a rel="nofollow" href="https://www.goodreads.com/review/show/1407079962?utm_medium=api&amp;utm_source=custom_widget">Phantoms in the Brain: Probing the Mysteries of the Human Mind</a>
+                        </div>
+                        <div class="gr_custom_author_1522250302">
+                          by <a rel="nofollow" href="https://www.goodreads.com/author/show/17674.V_S_Ramachandran">V.S. Ramachandran</a>
+                        </div>
+                        <div class="gr_custom_review_1522250302">
+                          One of the few authors who makes a clear distinction between speculation, theory and facts.
+                        </div>
+                        <div class="gr_custom_tags_1522250302">
+                          tagged:
+                          goodreads
+                        </div>
+                    </div>
+                <br style="clear: both"/>
+                <center>
+                  <a rel="nofollow" href="https://www.goodreads.com/"><img alt="goodreads.com" style="border:0" src="https://www.goodreads.com/images/widget/widget_logo.gif" /></a>
+                </center>
+                <noscript>
+                  Share <a rel="nofollow" href="https://www.goodreads.com/">book reviews</a> and ratings with Divya, and even join a <a rel="nofollow" href="https://www.goodreads.com/group">book club</a> on Goodreads.
+                </noscript>
+                </div>
+
+                    </div>
+                    <script src="https://www.goodreads.com/review/custom_widget/19726688.I%20recently%20read..?cover_position=left&cover_size=small&num_books=3&order=d&shelf=read&show_author=1&show_cover=1&show_rating=1&show_review=1&show_tags=1&show_title=1&sort=review&widget_bg_color=FFFFFF&widget_bg_transparent=true&widget_border_width=3&widget_id=1522250302&widget_text_color=000000&widget_title_size=small&widget_width=medium" type="text/javascript" charset="utf-8"></script>
+              <!---------------------------------------------------------------------------------------------------  -->
+            <!-- </div> --> 
+              <!---------------------------------------------------------------------------------------------------  -->
+
+        </div>
+          </div>
+        <footer class="fixed-bottom">
+              <ul id="horizontal-list">
+                <li><a href="https://github.com/div1090">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/divya-sivasankaran/"> LinkedIn </a></li>
+                <li><a href="mailto:div1090@gmail.com">E-mail </a></li>
+                <li><a href="">Medium</a></li>
+                <p class="float-right">
+                  <a href="#">Back to top</a>
+                </p>
+            </ul>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 </html>

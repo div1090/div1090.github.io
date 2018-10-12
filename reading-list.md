@@ -8,7 +8,7 @@ order: 2
 
 I'm currently reading ...
 
-        Antifragile : Things That Gain from Disorder by Nassim Nicholas Taleb
+        On the Shortness of Life by Seneca
 
 Best reads from this year:
 >

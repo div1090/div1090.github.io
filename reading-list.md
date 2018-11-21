@@ -8,7 +8,7 @@ order: 2
 
 I'm currently reading ...
 
-        On the Shortness of Life by Seneca
+        Essentialism: The Disciplined Pursuit of Less
 
 Best reads from this year:
 >
@@ -16,6 +16,7 @@ Best reads from this year:
 2. **Sapiens: A Brief History of Humankind** by *Yuval Noah Harari*
 3. **The Gene: An Intimate History** by *Siddhartha Mukherjee*
 4. **The Haves and the Have-Nots: A Brief and Idiosyncratic History of Global Inequality** by *Branko Milanović*
+5. **Factfulness: Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think** by *Hans, Ola and Anna Rosling*
 
 <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
 <style type="text/css" media="screen">

@@ -15,6 +15,6 @@ Continuous Authentication using biometrics is receiving renewed attention owing 
 A part of it has been published at the [International Conference on Biometrics 2018](http://icb2018.org/)
 
 * [Thesis](http://scholarbank.nus.edu.sg/handle/10635/138654)
-* [Presentation](https://github.com/div1090/Context-Weighted-Majority-Algorithm/blob/master/static/Master_thesis_presentation.pptx)
+* [Presentation](https://github.com/divSivasankaran/Context-Weighted-Majority-Algorithm/blob/master/static/Master_thesis_presentation.pptx)
 * [Publication](https://ieeexplore.ieee.org/document/8411227/)
-* [Poster](https://github.com/div1090/Context-Weighted-Majority-Algorithm/blob/master/static/icb_poster_cwma_a0.pdf)
+* [Poster](https://github.com/divSivasankaran/Context-Weighted-Majority-Algorithm/blob/master/static/icb_poster_cwma_a0.pdf)

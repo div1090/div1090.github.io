@@ -8,9 +8,16 @@ order: 2
 
 I'm currently reading ...
 
-        Essentialism: The Disciplined Pursuit of Less
+         Siddhartha by *Hermann Hesse*
 
-Best reads from this year:
+Best reads from 2019:
+>
+1. **Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy** by *Cathy O'Neil*
+2. **Every Time I Find the Meaning of Life, They Change It: Wisdom of the Great Philosophers on How to Live** by *Daniel Klein*
+3. **Crucial Conversations: Tools for Talking When Stakes Are High** by *Kerry Patterson*
+
+
+Best reads from 2018:
 >
 1. **Ethical Know-How: Action, Wisdom, and Cognition** by *Francisco J. Varela*
 2. **Sapiens: A Brief History of Humankind** by *Yuval Noah Harari*

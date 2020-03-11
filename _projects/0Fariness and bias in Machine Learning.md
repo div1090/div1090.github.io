@@ -1,12 +1,13 @@
 ---
-title: Fairness and Bias in Machine Learning
-subtitle: workshop
+title: FairML from theory to practice
+subtitle: Lessons drawn from our journey to build a fair product
 layout: project
-image: ''
+image: assets/images/fairness.png
 icon: none
-cover-photo: assets/images/fairml.png
+cover-photo: assets/images/fairness.png
 ---
-## FairML from theory to practice - Lessons drawn from our journey to build a fair product
+
+![](../assets/images/fairness.png)
 
 In the recent years, there has been a lot of attention on the need for ethical considerations in ML, as well as the different ways to address bias in different stages of the ML pipeline. However, there hasn't been a lot of focus on how to bring fairness to ML products.
 
@@ -16,5 +17,5 @@ Alternatively, what if data scientists could ping an API to compute the scores f
 It is difficult to build fairness into products when there are competing incentives such as optimizing for revenue or conversion. How do we build a product that accounts for the differences in perspectives of each team? In our effort to build fairness capabilities into our products that are used by different industries (eg., telco, banking, retail), we have encountered these and more such questions. We strongly believe that the larger goal should not be to build fairer products, but instead build products that drive better decision-making by clarifying problems and opportunities. In this talk, we will share the biggest challenges we’ve faced and the lessons drawn from our experience.
 If you already know the importance of attending to bias and fairness in machine learning, this talk will help you see how to turn ideas and good intentions into action. If you are a data scientist, bring along a business partner to the talk (and vice versa) to learn how you can work together to bring fair solutions into production.
 
-* [Presentation]()
-* [Scenarios]()
+* [Presentation](https://github.com/divSivasankaran/divSivasankaran.github.io/blob/master/assets/documents/FairML_%20from%20theory%20to%20practice.pdf)
+* [Scenarios](https://github.com/divSivasankaran/divSivasankaran.github.io/blob/master/assets/documents/Scenarios%20-%20FairML%20Womxn%20in%20Datascience%20worskhop%20.pdf)
